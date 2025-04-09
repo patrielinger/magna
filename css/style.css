@@ -339,6 +339,7 @@ body{
 
 .info h4 {
     font-weight: bold;
+    font-size: 1rem;
 }
 
 .info .contact-links {
@@ -612,17 +613,42 @@ body{
     color: #fff;
     transition: 0.3s;
 }
-.precios{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+.precios {
+    display: inline-block;
+    text-align: left; /* Cambiado de 'start' a 'left' para mayor compatibilidad */
+    direction: ltr; /* Asegura la dirección del texto */
 }
 
-.precios p{
+.precios p {
     display: inline-block;
+    text-align: left; /* Cambiado de 'start' a 'left' */
     margin: 0;
     padding: 0;
     width: 100%;
     font-size: 0.9rem;
-    width: 50%;
+    direction: ltr; /* Asegura la dirección del texto */
+}
+.cattt{
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    text-decoration-line: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.4rem;
+    background-color: #06A77D;
+    border-radius: 20px;
+    text-align: center;
+}
+.cattt:hover{
+    color: #fff;
+}
+.h1inicio{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
 }
