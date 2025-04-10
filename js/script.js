@@ -53,4 +53,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // Cambiar el texto cada 3 segundos (sincronizado con la animación CSS)
     cambiarTexto(); // Mostrar el primer texto inmediatamente
     setInterval(cambiarTexto, 3000);
+
+    const modal = document.getElementById('modal');
+    const btnDescripcion = document.querySelector('.btn-descripcion');
+    const closeModal = document.querySelector('.modal .close');
+
+    // Abrir el modal al hacer clic en el botón
+    btnDescripcion.addEventListener('click', () => {
+        modal.style.display = 'block';
+    });
+
+    // Cerrar el modal al hacer clic en la "X"
+    closeModal.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    // Cerrar el modal al hacer clic fuera del contenido
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
 });
