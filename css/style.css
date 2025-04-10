@@ -193,8 +193,8 @@ body{
 
 @media (max-width: 768px) {
     .cat {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Ajusta el tamaño mínimo en pantallas pequeñas */
-        gap: 15px;
+        grid-template-columns: repeat(2, 1fr); /* Cambia a 2 columnas en pantallas pequeñas */
+        gap: 15px; /* Espaciado entre los elementos */
     }
 }
 
