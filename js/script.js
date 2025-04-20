@@ -74,4 +74,45 @@ document.addEventListener('DOMContentLoaded', () => {
             modal.style.display = 'none';
         }
     });
+
+    const modalAirpods = document.getElementById('modal-airpods');
+    const btnDescripcion2 = document.querySelector('.btn2');
+    const closeModal2 = document.querySelector('.modal2 .close2');
+
+    // Abrir el modal al hacer clic en el botón
+    btnDescripcion2.addEventListener('click', () => {
+        modalAirpods.style.display = 'block';
+    });
+
+    // Cerrar el modal al hacer clic en la "X"
+    closeModal2.addEventListener('click', () => {
+        modalAirpods.style.display = 'none';
+    });
+
+    // Cerrar el modal al hacer clic fuera del contenido
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            modalAirpods.style.display = 'none';
+        }
+    });
+
+    // Selecciona todos los botones que abren modales
+    const btnsDescripcion = document.querySelectorAll('.btn2');
+
+    // Agrega un evento de clic a cada botón
+    btnsDescripcion.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            // Encuentra el contenedor raíz del botón (el .item más cercano)
+            const item = btn.closest('.item');
+
+            // Busca el modal dentro del contenedor raíz
+            const modal = item.querySelector('.modal2');
+
+            // Si se encuentra el modal, lo muestra
+            if (modal) {
+                modal.style.display = 'block';
+            }
+        });
+    });
+
 });

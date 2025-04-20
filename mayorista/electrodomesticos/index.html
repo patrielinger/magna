@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="/js/script.js"></script>
+    <script src="/js/precios.js"></script>
     <title>MAGNA IMPORTACIONES</title>
     <!-- info -->
 
@@ -52,7 +53,7 @@
               <a class="nav-link active" id="clr" aria-current="page" href="/mayorista/electrodomesticos/">Electrodomesticos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" id="clr" aria-current="page" href="/mayorista/vapers/">vapers</a>
+              <a class="nav-link active" id="clr" aria-current="page" href="/mayorista/vapers/">Vapers</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" id="clr" aria-current="page" href="/mayorista/gorras/">Gorras</a>
@@ -68,15 +69,7 @@
     </div>
   </nav>
 
-
-
-  <div class="wel">
-    <div class="bg-wel">
-      <div class="animated-text">
-        <span id="text"></span>
-      </div>      
-    </div>
-</div>
+  <h1>Gorras</h1>
 
 <div class="cat">
   <div class="category"><a href="https://patografia3d.netlify.app/">Impresiones 3D</a></div>
@@ -87,6 +80,7 @@
 <hr style="margin-top: 0;">
 
 
+<h1 style="text-align: center;">Electrodomesticos</h1>
 
 <div class="listado container">
 
@@ -122,9 +116,6 @@
 
 
 
-
-
-
   <div class="item">
     <div class="img-container">
       <img src="/img/prod/1-airpods.jpg" class="carousel-image active">
@@ -138,14 +129,14 @@
     <div class="info">
       <h4>Airpods Pro Gen 2</h4>
       <div class="precios">
-        <button class="btn-descripcion">Consultar precios</button>
+        <button class="btn2 open-modal" data-target="modal-airpods">Consultar precios</button>
 
         
 
-<div id="modal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <img src="/img/prod/1-airpods.jpg" alt="Airpods Pro Gen 2" class="modal-image">
+<div id="modal-airpods" class="modal2">
+  <div class="modal-content2 airpods">
+    <span class="close2">&times;</span>
+    <img src="/img/prod/1-airpods.jpg" alt="Airpods Pro Gen 2" class="modal-image2">
     <h2>Airpods Pro Gen 2</h2>
 
     <div class="descripcion">
@@ -206,12 +197,9 @@
     </div>
   </div>
 
+  
 
 </div>
-
-
-
-
 
 
 <div class="footer">
@@ -245,4 +233,6 @@
     </div>
 </div>
 </body>
+
+<script src="/js/script.js"></script>
 </html>
